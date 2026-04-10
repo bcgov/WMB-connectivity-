@@ -40,7 +40,7 @@ All spatail data was converted to geo parquets from various .gdbs
 - take input data and make a copy only with SIFA, SIFA2, FOR REP, Rec Cat
 - create flag, claculate new column 'Designation' (str)= 'Rec'
 - union with AFLB (Norths), THLB (query to THLB_FACT>0), Priority WMB, and TSU
-- select all records with flag 
+- select all records with flag and where  WATER_MANAGMENT_BASIN_NAME/NAME in your priority basins 
 - export with only the following fields SIFA, SIFA2, FOR_REP, NEW_AGE_CLASS, Orig_Age, WATER_MANAGMENT_BASIN_NAME(if NAME col, change to match WATER_MANAGMENT_BASIN_NAME on export), Area_ha, Rec_Cat, Rec_Cat_short, thlb_fact, aflb_fact
 ### create prioirty flags
 - select by location (within) all Cultural areas, calculate priority_2d to 3 
@@ -146,4 +146,3 @@ input tables for the summary include
 - erase conservation lands and aspatially deferred old from union layer 
 - recalculate area_ha, thlb_area_ha
 - summarize erased area by wmb 
-
