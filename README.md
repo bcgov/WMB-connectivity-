@@ -112,7 +112,7 @@ run cells up to the end of 3j
 ## manual steps for secondary reserves aspatial deferred old forest and conservations lands 
 
 for each layer
-- if not already dissolved, dissolve it for a 'clean' slate of attributes 
+- if not already dissolved, dissolve it for a 'clean' slate of attributes, and to reduce slivers 
 - create new attribute 'Designation' (text), populate with layer name (conservation lands, etc)
 - erase HV1 dz and critical infrastructure and electrification infrastructure from dataset, so there are none overlapping  
 - union dissolved layer with wmb, tsu(split by wmb), forest recruitment, thlb layer and AFLB
